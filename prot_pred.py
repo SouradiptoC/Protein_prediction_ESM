@@ -61,6 +61,3 @@ predict = st.sidebar.button('Predict', on_click=update)
 
 if not predict:
     st.warning('Enter Protein Sequence Data')
-
-# streamlit run /home/souro/Projects/ahana_maam/srcs/prot_pred.py
-# https://cloudconvert.com/webm-to-mp4
