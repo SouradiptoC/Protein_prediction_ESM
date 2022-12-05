@@ -31,7 +31,6 @@ def update(seq=txt):
         'Content-Type': 'application/x-www-form-urlencoded',
     }
     response = requests.post('https://api.esmatlas.com/foldSequence/v1/pdb/', headers=headers, data=seq)
-    name = seq[:3] + seq[-3:]
     pdb_str = response.content.decode('utf-8')
 
     with open('predicted.pdb', 'w') as out_file:
